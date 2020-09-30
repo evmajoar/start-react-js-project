@@ -1,0 +1,22 @@
+{
+  "presets": [
+    ["@babel/preset-env",
+      {
+        "corejs": 3,
+        "useBuiltIns": "usage",
+        "modules": false,
+        "debug": true,
+        "targets": [
+          "last 5 chrome versions",
+          "last 3 firefox versions",
+          "last 3 safari versions",
+          "last 1 edge version"
+        ]
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties"
+  ]
+}
