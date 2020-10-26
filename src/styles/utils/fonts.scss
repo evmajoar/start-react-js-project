@@ -1,0 +1,11 @@
+@import "variables";
+@import "mixins";
+
+/**
+  * Файловая структура дожна соответсвовать:
+  * 1.Название папки хранения семейства шрифтов с использованием camelCase, например ProximaNova
+  * 2.Название шрифта с использованием camelCase, например ProximaNova
+  * 3.Начертание шрифта через дефис с большой буквы, например ProximaNova-Regular
+  * Вид пути на выходе: src:url(../fonts/ProximaNova/ProximaNova-Regular.woff2)
+  */
+@include fontFace($font-name-main, (400, 500, 600, 700));

@@ -16,7 +16,7 @@ module.exports = env => {
       })
     ];
 
-    if(isProd) {
+    if (isProd) {
       plug.push(
         new MiniCssExtractPlugin({
           filename: 'index.[hash:8].min.css',
@@ -30,14 +30,10 @@ module.exports = env => {
   return {
     entry: './src/index.js',
     mode: isProd ? 'production' : isDev && 'development',
-    output: {
-      path: path.join(__dirname, 'dist'),
-      filename: isProd ? 'index.[hash:8].bundle.min.js' : 'index.[hash:8].bundle.js'
-    },
     module: {
       rules: [
         {
-          test: /.jsx?$/i,
+          test: /(.js)x?$/i,
           exclude: /node_modules/,
           loader: [
             'babel-loader',
@@ -78,10 +74,14 @@ module.exports = env => {
       ]
     },
     plugins: getPlugins(),
+    output: {
+      path: path.join(__dirname, 'build'),
+      filename: isProd ? 'index.[hash:8].bundle.min.js' : 'index.[hash:8].bundle.js'
+    },
     devServer: {
-      port: 9000,
       open: true,
-      hot: true
+      hot: true,
+      port: 9000,
     }
   };
 };

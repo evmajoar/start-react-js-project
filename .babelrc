@@ -5,13 +5,7 @@
         "corejs": 3,
         "useBuiltIns": "usage",
         "modules": false,
-        "debug": true,
-        "targets": [
-          "last 5 chrome versions",
-          "last 3 firefox versions",
-          "last 3 safari versions",
-          "last 1 edge version"
-        ]
+        "debug": false
       }
     ],
     "@babel/preset-react"

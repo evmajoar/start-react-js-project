@@ -1,15 +1,18 @@
 {
-  "name": "complex",
+  "name": "start-react-js-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --env.mode=development",
-    "build": "webpack --env.mode=production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --env.mode=production"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "js",
+    "react",
+    "webpack"
+  ],
+  "author": "Arthur Dovhar",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.11.6",
@@ -37,8 +40,6 @@
     "core-js": "^3.6.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-redux": "^7.2.1",
-    "react-router-dom": "^5.2.0",
-    "redux": "^4.0.5"
+    "react-router-dom": "^5.2.0"
   }
 }
