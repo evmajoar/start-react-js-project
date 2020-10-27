@@ -28,12 +28,12 @@ module.exports = env => {
   };
 
   return {
-    entry: './src/index.js',
+    entry: './src/index.jsx',
     mode: isProd ? 'production' : isDev && 'development',
     module: {
       rules: [
         {
-          test: /(.js)x?$/i,
+          test: /(.js|ts)x?$/i,
           exclude: /node_modules/,
           loader: [
             'babel-loader',
@@ -48,7 +48,7 @@ module.exports = env => {
           ],
         },
         {
-          test: /\.(png|jpe?g|gif)$/i,
+          test: /\.(png|jpe?g|gif|svg)$/i,
           use: [
             {
               loader: 'file-loader',
@@ -74,6 +74,9 @@ module.exports = env => {
       ]
     },
     plugins: getPlugins(),
+    resolve: {
+      extensions: ['.js', '.jsx', '.ts', '.tsx', 'json'],
+    },
     output: {
       path: path.join(__dirname, 'build'),
       filename: isProd ? 'index.[hash:8].bundle.min.js' : 'index.[hash:8].bundle.js'
