@@ -1,7 +1,4 @@
-/**
-  * Базовые цвета
-  * https://colorscheme.ru/color-converter.html
-  */
+// https://colorscheme.ru/color-converter.html
 $black: hsl(0, 0%, 0%);
 $gray-darkest: hsl(0, 0%, 10%);
 $gray-darker: hsl(0, 0%, 20%);
@@ -19,10 +16,7 @@ $color-base-success: hsl(120, 39%, 54%);
 $color-base-danger: hsl(2, 64%, 58%);
 $color-base-warning: hsl(35, 84%, 62%);
 
-/**
-  * Цвета брендов
-  * https://brandcolors.net/
-  */
+// https://brandcolors.net/
 $color-brand-vkontakte: #4a76a8;
 $color-brand-facebook: #4267b2;
 $color-brand-twitter: #40a2f5;
@@ -40,9 +34,6 @@ $color-brand-viber: #8f5db7;
 $color-brand-whatsapp: #25d366;
 $color-brand-skype: #00aff0;
 
-/**
-  * Цвета сайта
-  */
 $color-white: $white;
 $color-black: $black;
 $color-green: #597D80;
