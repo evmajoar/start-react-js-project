@@ -1,6 +1,6 @@
 $font-base-size: 16;
 $font-name-main: "AvenirNextCyr";
-$font-size: $font-base-size + "px";
+$font-size: #{$font-base-size}px;
 $line-height: 1.2;
 $font-family: -apple-system, BlinkMacSystemFont, $font-name-main, "Ubuntu", "Droid Sans",
   "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
