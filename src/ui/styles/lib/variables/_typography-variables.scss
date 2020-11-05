@@ -1,8 +1,7 @@
-$font-base-size: 16;
-$font-name-main: "AvenirNextCyr";
-$font-size: #{$font-base-size}px;
-$line-height: 1.2;
-$font-family: -apple-system, BlinkMacSystemFont, $font-name-main, "Ubuntu", "Droid Sans",
+$font-name-main: "Roboto";
+$font-size-main: 1.6rem;
+$line-height: 2.4rem;
+$font-family-main: -apple-system, BlinkMacSystemFont, $font-name-main, "Ubuntu", "Droid Sans",
   "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $font-family--monospace: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New,
   monospace;

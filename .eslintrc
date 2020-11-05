@@ -1,12 +1,14 @@
 {
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
   ],
   "parser": "babel-eslint",
   "plugins": [
     "babel",
-    "react"
+    "react",
+    "react-hooks"
   ],
   "parserOptions": {
     "sourceType": "module",
@@ -31,7 +33,9 @@
     "no-multi-spaces": "error",
     "no-console": "off",
     "react/prop-types": "off",
-    "react/no-set-state": "off"
+    "react/no-set-state": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
   "settings": {
     "react": {

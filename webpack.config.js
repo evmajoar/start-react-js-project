@@ -33,7 +33,7 @@ module.exports = env => {
     module: {
       rules: [
         {
-          test: /(.js|ts)x?$/i,
+          test: /.(js|ts)x?$/i,
           exclude: /node_modules/,
           loader: [
             'babel-loader',
@@ -84,7 +84,10 @@ module.exports = env => {
     devServer: {
       open: true,
       hot: true,
-      port: 3000,
+      port: 9000,
+      historyApiFallback: {
+        disableDotRule: true
+      }
     }
   };
 };

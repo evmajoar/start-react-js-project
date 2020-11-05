@@ -34,11 +34,3 @@
     }
   }
 }
-
-@function calcRem($number) {
-  @return ($number/$font-base-size) #{rem};
-}
-
-@mixin inRem($number) {
-  font-size: calcRem($number);
-}

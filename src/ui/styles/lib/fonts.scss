@@ -1,0 +1,11 @@
+@import "variables";
+@import "mixins";
+
+/**
+  * Файловая структура:
+  * 1.Название папки хранения семейства шрифтов с использованием camelCase, например Roboto
+  * 2.Название шрифта с использованием camelCase, например Roboto
+  * 3.Начертание шрифта через дефис с большой буквы, например Roboto-Regular
+  * Вид пути на выходе: src:url(../fonts/Roboto/Roboto-Regular.woff2)
+  */
+@include fontFace($font-name-main, (400));
